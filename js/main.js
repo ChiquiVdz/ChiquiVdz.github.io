@@ -9,3 +9,11 @@ abrir.addEventListener("click", () => {
 cerrar.addEventListener("click", () => {
     nav.classList.remove("visible");
 })
+
+function barra(){
+    document.getElementsByClassName("inputbuscar").style.display = 'block';
+}
+
+function cierre(){
+    document.getElementsByClassName("inputbuscar").style.display = 'none';
+}

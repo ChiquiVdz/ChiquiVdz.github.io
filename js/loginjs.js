@@ -1,0 +1,1 @@
+localStorage.setItem("name", document.getElementById("txt-user").value());

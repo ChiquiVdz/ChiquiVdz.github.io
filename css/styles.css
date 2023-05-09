@@ -10,7 +10,7 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 2rem;
-    background-color: palevioletred;
+    background-color: #e21398;
 }
 
 .logo {
@@ -36,6 +36,10 @@ a {
 
 @media screen and (max-width: 550px) {
 
+    .op{
+        color: white    ;
+    }
+
     .abrir-menu,
     .cerrar-menu {
         display: block;
@@ -47,6 +51,10 @@ a {
 
     .abrir-menu {
         color: #1c1c1c;
+    }
+
+    #inputbuscar{
+        display: none;
     }
 
     .cerrar-menu {
@@ -83,6 +91,13 @@ a {
     .nav-list li a {
         color: #ecececec;
     }
+
+    .productos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 footer {
@@ -107,4 +122,28 @@ footer {
 .productos{
     display: flex;
     justify-content: space-around;
+}
+
+.op{
+    cursor: pointer;
+    border-radius: 50%;
+    transition: .3s ease-in-out;
+}
+
+.op:hover{
+    background-color: palevioletred;
+    box-shadow: 15px 15px 50px grey,
+                -15px -15px -50px white;
+}
+
+input[type=radio]{
+    display: none;
+}
+
+#inputbuscar{
+    display: none;
+}
+
+#buscar:checked ~ #inputbuscar{
+    display: block;
 }
